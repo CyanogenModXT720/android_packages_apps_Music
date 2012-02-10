@@ -386,6 +386,7 @@ public class AudioPreview extends Activity implements OnPreparedListener, OnErro
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         switch (keyCode) {
             case KeyEvent.KEYCODE_HEADSETHOOK:
+            case KeyEvent.KEYCODE_MEDIA_MODE:
             case KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE:
                 if (mPlayer.isPlaying()) {
                     mPlayer.pause();
